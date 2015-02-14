@@ -1,0 +1,52 @@
+---
+layout: index
+pageable: true
+per_page: 9
+--- 
+h1
+  |「
+  = tagname
+  |」タグが付けられた記事
+
+hr
+.cards
+  - page_articles.each_with_index do |article, i|
+    .card
+      .browser
+        .browser-body
+          - article.tags.each do |tag|
+            .line
+              span.variable
+                | $
+              span
+                = link_to "#{tag}", tag_path(tag)
+      .card-header
+        = link_to article.title, article
+        .date
+          span
+            i.fa.fa-clock-o
+          span.posted-date
+            = article.date.strftime('%F')
+      .card-copy
+        p
+          = article.summary
+
+- if paginate && num_pages > 1
+  .pagination
+    ul
+      li class=(prev_page ? "" : "disabled")
+        - if prev_page
+          =link_to "前のページ", prev_page.url
+      - (page_number - 2 .. page_number + 3).select{|i| i > 0 && i <= num_pages}.each do |i|
+        - if i == page_number
+          li.active
+            span= i
+        - else
+          li
+            - p = nil
+            - (i ... page_number).each do p = p ? p.metadata[:locals]['prev_page'] : prev_page; end
+            - (page_number ... i).each do p = p ? p.metadata[:locals]['next_page'] : next_page; end
+            =link_to "#{i}", p && p.url
+      li class=(next_page ? "" : "disabled")
+        - if next_page
+          =link_to "次のページ", next_page.url

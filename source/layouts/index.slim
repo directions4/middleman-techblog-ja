@@ -1,0 +1,17 @@
+doctype html
+html.no-js lang="ja"
+  head
+    = partial "partials/head"
+  body
+    header
+      = partial "partials/header"
+    div#main[role="main"]
+      article.index
+        = partial "partials/article_header"
+        = yield
+      aside
+        = partial "partials/sidebar"
+    .sticky-footer
+    footer.footer role="siteinfo"
+      = partial "partials/footer"
+    = partial "partials/bottom"

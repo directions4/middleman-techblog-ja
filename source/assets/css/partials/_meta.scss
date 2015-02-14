@@ -1,0 +1,128 @@
+$badge-font-size: 0.75em !default;
+$medium-gray: #999 !default;
+$alert-color: #fff6bf !default;
+$error-color: #fbe3e4 !default;
+$notice-color: #e5edf8 !default;
+$success-color: #e6efc2 !default;
+
+@mixin badge($color: $medium-gray) {
+  background-color: $color;
+  border-radius: $badge-font-size * 5;
+  color: darken($color, 60%);
+  display: inline-block;
+  font-size: $badge-font-size;
+  font-weight: 400;
+  line-height: 1;
+  padding: 0.4em 1.2em;
+  margin: 0 .6em;
+}
+
+.badge {
+  @include badge;
+}
+
+.badge-alert {
+  @include badge($alert-color);
+}
+
+.badge-error {
+  @include badge($error-color);
+}
+
+.badge-notice {
+  @include badge($notice-color);
+}
+
+.badge-success {
+  @include badge($success-color);
+}
+.meta {
+  font-size: 0.75em;
+  width: 100%;
+
+  .tag-labels {
+    display: inline;
+    margin-bottom: $base-line-height;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  .posted-date {
+    text-align: right;
+  }
+  ul.sns {
+    margin: 0;
+  }
+}
+i.fa {
+  padding-right: 4px;
+}
+span.tag-labels {
+  padding-left: 10px;
+  span.tag {
+    padding-right: 6px;
+  }
+}
+
+$sns-button-font-size: 1em !default;
+$medium-gray: #999 !default;
+$twitter-color: #55acee !default;
+$facebook-color: #3b5998 !default;
+$google-color: #dd4b39 !default;
+$hatena-color: #2c6ebd !default;
+$pocket-color: #f13d53 !default;
+
+@mixin sns-button ($color: $medium-gray) {
+  -webkit-font-smoothing: antialiased;
+  padding: 0.75em 1em;
+  text-decoration: none;
+  background-color: $color;
+  border-radius: $base-border-radius;
+  color: #ffffff;
+  display: inline-block;
+  font-size: $base-font-size;
+  font-weight: 600;
+  line-height: 1;
+  margin: .4em .2em .6em 0;
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.sns-button {
+  @include sns-button;
+}
+.sns-button-twitter {
+  @include sns-button($twitter-color);
+}
+.sns-button-facebook {
+  @include sns-button($facebook-color);
+}
+.sns-button-google {
+  @include sns-button($google-color);
+}
+.sns-button-hatena {
+  @include sns-button($hatena-color);
+}
+.sns-button-pocket {
+  @include sns-button($pocket-color);
+}
+
+ul.sns {
+  height:auto;
+
+  li{
+    float:left;
+    list-style:none;
+  }
+  a{
+    display:block;
+    color:#ffffff;
+    text-decoration:none;
+  }
+  a:hover{
+    text-decoration:none;
+    color:#ffffff;
+  }
+}

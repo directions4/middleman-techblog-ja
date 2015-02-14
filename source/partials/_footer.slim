@@ -1,0 +1,23 @@
+ul
+  li
+    a href="/about.html"  このブログについて
+  .footer-secondary-links
+    ul
+      li
+        | © #{data.app.site_author}
+    ul.footer-social
+      -if data.app.github_id
+        li
+          a href="javascript:void(0)"
+            i.fa.fa-github
+            | Github
+      -if data.app.twitter_id
+        li
+          a href="https://twitter.com/#{data.app.twitter_id}"
+            i.fa.fa-twitter
+            | Twitter
+      -if data.app.facebook_id
+        li
+          a href="https://www.facebook.com/#{data.app.facebook_id}"
+            i.fa.fa-facebook
+            | Facebook

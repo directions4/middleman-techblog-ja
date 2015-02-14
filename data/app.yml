@@ -1,0 +1,26 @@
+###
+# Set your blog info
+###
+site_title: 'Middleman-TechBlog-ja'
+site_subtitle: '何かサブタイトル的なものを入れます'
+site_description: Middleman-TechBlog-jaは、日本語のブログをサッと立ち上げられるスターターキットです。
+site_url: 'http://blues.pet-sounds.net'
+site_author: 'ほしいも小僧'
+
+# SNS
+github_id: directions4
+twitter_id: middlemanapp
+facebook_id: middlemanapp
+
+# Disqus
+disqus_shortname:
+
+# Set your Google Analytics Tracking ID
+ga_tracking_id: UA-XXXXXXX-X
+
+# Deployment
+deploy_host: example.com
+deploy_port: 22
+deploy_path: /home/shonan/your_name
+deploy_user: your_name
+

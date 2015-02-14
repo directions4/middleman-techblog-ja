@@ -1,0 +1,26 @@
+aside {
+
+  $sidebar-headline-font-size: 1em;
+  $sidebar-list-font-size: 0.9em;
+
+  section {
+    @include border-top-radius(5px);
+    @include border-bottom-radius(5px);
+    @include border-style(solid);
+    @include border-width(1px);
+    @include border-color($base-border-color);
+    box-shadow: 0 2px 4px darken($base-background-color, 10%);
+    padding: $base-spacing;
+    margin: 0 10px 20px 10px;
+  }
+
+  h2 {
+    font-size: $sidebar-headline-font-size;
+    margin-bottom: 0.5em;
+  }
+
+  li {
+    margin-left: 0.5em;
+    font-size: $sidebar-list-font-size;
+  }
+}

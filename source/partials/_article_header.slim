@@ -1,0 +1,27 @@
+- unless current_article.nil?
+  h1
+    = current_article.title
+  section.meta
+    span
+      i.fa.fa-clock-o
+      span.posted-date
+        = current_article.date.strftime('%F')
+    span.tag-labels
+      - current_article.tags.each do |tag|
+        span.tag
+          i.fa.fa-tag
+          span
+            = link_to "#{tag}", tag_path(tag)
+    ul.sns
+      li.sns-button-hatena
+        a href=("http://b.hatena.ne.jp/add?mode=confirm&url=#{data.app.site_url}/#{current_page.path}") target="_blank"  Hatena
+      li.sns-button-twitter
+        a href=("http://twitter.com/share?url=#{data.app.site_url}/#{current_page.path}") target="_blank"  Twitter
+      li.sns-button-facebook
+        a href=("https://www.facebook.com/sharer/sharer.php?u=#{data.app.site_url}/#{current_page.path}") target="_blank"  Facebook
+      li.sns-button-pocket
+        a href=("http://getpocket.com/edit?url=#{data.app.site_url}/#{current_page.path}") target="_blank"  Pocket
+hr
+  -if current_page.data.image
+    .title-image
+      img src="#{current_page.data.image}" alt="#{current_article.title}" /
