@@ -29,6 +29,8 @@ starter kits to help you blogging faster.
   Deploy your Middleman build via rsync, ftp, sftp, or git (deploys to Github Pages by default)
 * [Middleman Google Analytics](https://github.com/danielbayerlein/middleman-google-analytics):
   A Middleman plugin to handle generating your Google Analytics tracking code
+* [Middleman Disqus](https://github.com/simonrice/middleman-disqus)
+  A middleman plugin to handle generating your Disqus embed code
 
 ## Getting Started
 
@@ -37,8 +39,6 @@ Set up your project in your code directory
 ```
 git clone git@github.com:directions4/middleman-techblog-ja.git your-blog
 cd your-blog
-git remote rm origin
-git remote add origin your-git-url
 ```
 
 Install dependencies:
@@ -68,7 +68,6 @@ Vendor stylesheets and JavaScripts should go in each of their `/vendor/` directo
 You can deploy contents with rsync, ftp, sftp and git. default is sftp.
 
 ```
-bundle exec middleman build
 bundle exec middleman deploy
 ```
 

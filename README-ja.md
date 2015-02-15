@@ -56,17 +56,12 @@ bundle exec middleman
 
 ### デプロイ
 
-デプロイするにはまずは以下のようにbuildコマンドでコンテンツをコンパイルします。
-
-```
-bundle exec middleman build
-```
-
-コンパイルできたらデプロイします。デフォルトではSFTPを使います。
+deploy コマンドで、ビルドとデプロイを行います。デフォルトはSFTPです。
 
 ```
 bundle exec middleman deploy
 ```
+ビルド時は、ページ間のリンク、画像リンク、各種アセットはすべて相対パスに変換されます。
 
 ## ディレクトリ構成
 

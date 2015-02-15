@@ -77,7 +77,7 @@ site_author: 'ヤマダタロウ'
 ```
 ### Google Analytics の設定
 
-Google Analytics を利用する場合、下記のようにあなたのトラッキングIDを記入してください。空白の場合、GAのコードは出力しません。
+Google Analytics を利用する場合、下記のようにあなたのトラッキングIDを記入してください。
 
 ```
 ga_tracking_id: UA-XXXXXXX-X
@@ -95,7 +95,6 @@ disqus_shortname: your-shortname
 
 
 ここで設定された値、例えばブログのタイトルは、テンプレートから、`data.app.site_title` として参照可能です。
-
 
 ## 記事について
 
@@ -196,13 +195,7 @@ deploy_path: /home/foobar/public_html # パス
 deploy_user: your_name # ユーザー名
 ```
 
-デプロイするには、まずは以下のようにbuildコマンドでコンテンツをコンパイルします。
-
-```
-bundle exec middleman build
-```
-
-コンパイルできたらデプロイします。デフォルトではSFTPを使います。
+deploy コマンドで、ビルド、デプロイします。デフォルトではSFTPを使います。
 
 ```
 bundle exec middleman deploy
