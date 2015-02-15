@@ -1,11 +1,11 @@
-header.navigation role="banner" 
+header.navigation role="banner"
   .navigation-wrapper
-    a.logo href="/"
-      img alt=("Logo Image") src="/images/icons/logo.png" /
+    = link_to '/index.html', class: 'logo' do
+      = image_tag("icons/logo.png", alt: "Logo image")
       span.title
         = data.app.site_title
     a#js-mobile-menu.navigation-menu-button href="javascript:void(0)"  MENU
-    nav role="navigation" 
+    nav role="navigation"
       ul#js-navigation-menu.navigation-menu.show
         li.nav-link.more
           a href="javascript:void(0)"  年一覧
@@ -20,7 +20,7 @@ header.navigation role="banner"
               li
                 = link_to "#{tag}", tag_path(tag)
         li.nav-link
-          a href="/about.html"  このブログについて
+          = link_to 'このブログについて','/about.html'
     .navigation-tools
       .search-bar
         form role="search" action="http://google.co.jp/search"
@@ -30,5 +30,5 @@ header.navigation role="banner"
           input name="ie" type="hidden" value="UTF-8" /
           input name="oe" type="hidden" value="UTF-8" /
           input name="filter" type="hidden" value="0" /
-          button type="submit" 
-            img alt=("Search Icon") src="/images/icons/search-icon.png" /
+          button type="submit"
+            = image_tag("icons/search-icon.png", alt: "Search Icon")
