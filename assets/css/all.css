@@ -1283,7 +1283,7 @@ section.comment {
 
 /* line 203, /Users/satoru/dev/manual/source/assets/css/partials/_index.scss */
 .browser:before {
-  background: #DEDEDE "../../images/icons/window-button.png" no-repeat 0.5em 0.5em;
+  background: #DEDEDE url("../../images/icons/window-button.png") no-repeat 0.5em 0.5em;
   border-radius: 3px 3px 0 0;
   content: "";
   display: block;
