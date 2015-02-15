@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Middleman-TechBlog-ja</title>
+  <subtitle>何かサブタイトル的なものを入れます</subtitle>
+  <id>http://directions4.github.io/middleman-techblog-ja</id>
+  <link href="http://directions4.github.io/middleman-techblog-ja"/>
+  <link href="http://directions4.github.io/feed.xml" rel="self"/>
+  <updated>2015-02-14T00:00:00+09:00</updated>
+  <author>
+    <name>ほしいも小僧</name>
+  </author>
+  <entry>
+    <title>設定について</title>
+    <link rel="alternate" href="http://directions4.github.io/2015/02/14/settings.html"/>
+    <id>http://directions4.github.io/2015/02/14/settings.html</id>
+    <published>2015-02-14T00:00:00+09:00</published>
+    <updated>2015-02-15T02:48:52+09:00</updated>
+    <author>
+      <name>ほしいも小僧</name>
+    </author>
+    <content type="html">&lt;p&gt;基本的なブログの設定は、&lt;code&gt;data/app.yml&lt;/code&gt; で行います。内容については、特に説明の必要はないでしょう。ブログのタイトルやURLを設定してください。&lt;/p&gt;
+
+&lt;p&gt;下記は、実際のファイルの中身です。&lt;/p&gt;
+&lt;div class="highlight plaintext"&gt;&lt;table style="border-spacing: 0"&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class="gutter gl" style="text-align: right"&gt;&lt;pre class="lineno"&gt;1
+2
+3
+4
+5&lt;/pre&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;pre&gt;site_title: '俺のブログ'
+site_subtitle: '俺のブログは100%俺のブログです'
+site_description: 俺のブログは、俺による俺のためだけの100%俺的なことだけで構成されたブログです。
+site_url: 'http://blog.example.com'
+site_author: 'ヤマダタロウ'
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;h2&gt;Google Analytics の設定&lt;/h2&gt;
+
+&lt;p&gt;Google Analytics を利用する場合、下記のようにあなたのトラッキングIDを記入してください。空白の場合、GAのコードは出力しません。&lt;/p&gt;
+&lt;div class="highlight plaintext"&gt;&lt;table style="border-spacing: 0"&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class="gutter gl" style="text-align: right"&gt;&lt;pre class="lineno"&gt;1&lt;/pre&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;pre&gt;ga_tracking_id: UA-XXXXXXX-X
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;h2&gt;コメント機能の設定&lt;/h2&gt;
+
+&lt;p&gt;コメント機能は、&lt;a href="https://disqus.com/"&gt;Disqus&lt;/a&gt;を利用します。コメント機能を利用する場合、Discusのアカウントを作り、とショートネームを入手してください。Disqus のショートネームを下記のように設定すると、コメント機能を利用可能です。&lt;/p&gt;
+&lt;div class="highlight plaintext"&gt;&lt;table style="border-spacing: 0"&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class="gutter gl" style="text-align: right"&gt;&lt;pre class="lineno"&gt;1&lt;/pre&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;pre&gt;disqus_shortname: your-shortname
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;p&gt;空白にすると、コメント用のコードは出力しません。&lt;/p&gt;
+
+&lt;p&gt;ここで設定された値、例えばブログのタイトルは、テンプレートから、&lt;code&gt;data.app.site_title&lt;/code&gt; として参照可能です。&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>マークダウンのサンプル</title>
+    <link rel="alternate" href="http://directions4.github.io/2015/02/14/markdown.html"/>
+    <id>http://directions4.github.io/2015/02/14/markdown.html</id>
+    <published>2015-02-14T00:00:00+09:00</published>
+    <updated>2015-02-15T02:48:52+09:00</updated>
+    <author>
+      <name>ほしいも小僧</name>
+    </author>
+    <content type="html">&lt;p&gt;Markdownは、プレーンテキスト形式で書いた文書からHTMLを生成するために開発された、軽量なマークアップ言語です。以下にサンプルを示します。&lt;/p&gt;
+
+&lt;h2&gt;見出し&lt;/h2&gt;
+
+&lt;p&gt;イゲタの数で表現します。&lt;/p&gt;
+&lt;div class="highlight plaintext"&gt;&lt;table style="border-spacing: 0"&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class="gutter gl" style="text-align: right"&gt;&lt;pre class="lineno"&gt;1
+2
+3
+4
+5
+6&lt;/pre&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;pre&gt;# 見出し1
+## 見出し2
+### 見出し3
+#### 見出し4
+##### 見出し5
+###### 見出し6
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;h1&gt;見出し1&lt;/h1&gt;
+
+&lt;h2&gt;見出し2&lt;/h2&gt;
+
+&lt;h3&gt;見出し3&lt;/h3&gt;
+
+&lt;h4&gt;見出し4&lt;/h4&gt;
+
+&lt;h5&gt;見出し5&lt;/h5&gt;
+
+&lt;h6&gt;見出し6&lt;/h6&gt;
+
+&lt;h2&gt;段落&lt;/h2&gt;
+
+&lt;p&gt;空白行で囲まれた1行が、段落になります。つまりは、見たままです。&lt;/p&gt;
+
+&lt;h2&gt;リンク&lt;/h2&gt;
+
+&lt;h3&gt;普通のリンク&lt;/h3&gt;
+&lt;div class="highlight plaintext"&gt;&lt;table style="border-spacing: 0"&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class="gutter gl" style="text-align: right"&gt;&lt;pre class="lineno"&gt;1&lt;/pre&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;pre&gt;[example](http://example.com)
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;a href="http://example.com"&gt;example&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3&gt;自動リンク&lt;/h3&gt;
+&lt;div class="highlight plaintext"&gt;&lt;table style="border-spacing: 0"&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class="gutter gl" style="text-align: right"&gt;&lt;pre class="lineno"&gt;1&lt;/pre&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;pre&gt;&amp;lt;http://example.com&amp;gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;a href="http://example.com"&gt;http://example.com&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2&gt;画像&lt;/h2&gt;
+&lt;div class="highlight plaintext"&gt;&lt;table style="border-spacing: 0"&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class="gutter gl" style="text-align: right"&gt;&lt;pre class="lineno"&gt;1&lt;/pre&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;pre&gt;![Fender Stratocaster](/images/sample.jpg)
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;img alt="Fender Stratocaster" src="../../../images/sample.jpg" /&gt;&lt;/p&gt;
+
+&lt;h2&gt;コード&lt;/h2&gt;
+
+&lt;p&gt;ruby&lt;/p&gt;
+&lt;div class="highlight ruby"&gt;&lt;table style="border-spacing: 0"&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class="gutter gl" style="text-align: right"&gt;&lt;pre class="lineno"&gt;1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18&lt;/pre&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;pre&gt;&lt;span class="c1"&gt;# CLI Module&lt;/span&gt;
+&lt;span class="k"&gt;module&lt;/span&gt; &lt;span class="nn"&gt;Middleman&lt;/span&gt;
+  &lt;span class="k"&gt;module&lt;/span&gt; &lt;span class="nn"&gt;Cli&lt;/span&gt;
+    &lt;span class="c1"&gt;# The base task from which everything else etends&lt;/span&gt;
+    &lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;Base&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="no"&gt;Thor&lt;/span&gt;
+      &lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class="nb"&gt;self&lt;/span&gt;
+        &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;start&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;args&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+          &lt;span class="c1"&gt;# Change flag to a module&lt;/span&gt;
+          &lt;span class="no"&gt;ARGV&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;unshift&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'help'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="no"&gt;ARGV&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;delete&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'--help'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+          &lt;span class="c1"&gt;# Default command is server&lt;/span&gt;
+          &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="no"&gt;ARGV&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;!=&lt;/span&gt; &lt;span class="s1"&gt;'help'&lt;/span&gt; &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="no"&gt;ARGV&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;length&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="o"&gt;||&lt;/span&gt; &lt;span class="no"&gt;ARGV&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;first&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;include?&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'-'&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+            &lt;span class="no"&gt;ARGV&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;unshift&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'server'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+          &lt;span class="k"&gt;end&lt;/span&gt;
+
+          &lt;span class="k"&gt;super&lt;/span&gt;
+        &lt;span class="k"&gt;end&lt;/span&gt;
+      &lt;span class="k"&gt;end&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;p&gt;python&lt;/p&gt;
+&lt;div class="highlight python"&gt;&lt;table style="border-spacing: 0"&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class="gutter gl" style="text-align: right"&gt;&lt;pre class="lineno"&gt;1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11&lt;/pre&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;pre&gt;&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;JSONSerializer&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;object&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="s"&gt;"""
+    Simple wrapper around json to be used in signing.dumps and
+    signing.loads.
+    """&lt;/span&gt;
+    &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;dumps&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;obj&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;json&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;dumps&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;obj&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;separators&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;','&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;':'&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;encode&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;'latin-1'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+    &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;loads&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;json&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;loads&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;decode&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;'latin-1'&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;h2&gt;リスト&lt;/h2&gt;
+
+&lt;p&gt;ハイフン、プラス、アスタリスクのいずれかで箇条書きリストを記述可能。&lt;/p&gt;
+
+&lt;h3&gt;箇条書きリスト&lt;/h3&gt;
+&lt;div class="highlight plaintext"&gt;&lt;table style="border-spacing: 0"&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class="gutter gl" style="text-align: right"&gt;&lt;pre class="lineno"&gt;1
+2
+3&lt;/pre&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;pre&gt;* リスト1
+* リスト2
+* リスト3
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;リスト1&lt;/li&gt;
+&lt;li&gt;リスト2&lt;/li&gt;
+&lt;li&gt;リスト3&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight plaintext"&gt;&lt;table style="border-spacing: 0"&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class="gutter gl" style="text-align: right"&gt;&lt;pre class="lineno"&gt;1
+2
+3
+4
+5
+6
+7&lt;/pre&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;pre&gt;- リスト1
+    - ネスト リスト1_1
+        - ネスト リスト1_1_1
+        - ネスト リスト1_1_2
+    - ネスト リスト1_2
+- リスト2
+- リスト3
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;リスト1
+
+&lt;ul&gt;
+&lt;li&gt;ネスト リスト1_1
+
+&lt;ul&gt;
+&lt;li&gt;ネスト リスト1&lt;em&gt;1&lt;/em&gt;1&lt;/li&gt;
+&lt;li&gt;ネスト リスト1&lt;em&gt;1&lt;/em&gt;2&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;ネスト リスト1_2&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;リスト2&lt;/li&gt;
+&lt;li&gt;リスト3&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;番号付きリスト&lt;/h3&gt;
+&lt;div class="highlight plaintext"&gt;&lt;table style="border-spacing: 0"&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class="gutter gl" style="text-align: right"&gt;&lt;pre class="lineno"&gt;1
+2
+3
+4
+5&lt;/pre&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;pre&gt;1. 番号付きリスト1
+    1. 番号付きリスト1_1
+    2. 番号付きリスト1_2
+1. 番号付きリスト2
+1. 番号付きリスト3
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;ol&gt;
+&lt;li&gt;番号付きリスト1
+
+&lt;ol&gt;
+&lt;li&gt;番号付きリスト1_1&lt;/li&gt;
+&lt;li&gt;番号付きリスト1_2&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;番号付きリスト2&lt;/li&gt;
+&lt;li&gt;番号付きリスト3&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2&gt;罫線&lt;/h2&gt;
+
+&lt;p&gt;以下どれも同じ。&lt;/p&gt;
+&lt;div class="highlight plaintext"&gt;&lt;table style="border-spacing: 0"&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class="gutter gl" style="text-align: right"&gt;&lt;pre class="lineno"&gt;1
+2
+3
+4&lt;/pre&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;pre&gt;***
+---
+* * *
+-----
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;hr&gt;
+
+&lt;hr&gt;
+
+&lt;hr&gt;
+
+&lt;hr&gt;
+
+&lt;h2&gt;テーブル&lt;/h2&gt;
+
+&lt;p&gt;罫線でテーブル。&lt;/p&gt;
+&lt;div class="highlight plaintext"&gt;&lt;table style="border-spacing: 0"&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class="gutter gl" style="text-align: right"&gt;&lt;pre class="lineno"&gt;1
+2
+3
+4&lt;/pre&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;pre&gt;|foo|bar|
+|-----|-----|
+|col1|col2|
+|col3|col4|
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;table&gt;&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;foo&lt;/th&gt;
+&lt;th&gt;bar&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;col1&lt;/td&gt;
+&lt;td&gt;col2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;col3&lt;/td&gt;
+&lt;td&gt;col4&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+
+&lt;h2&gt;引用&lt;/h2&gt;
+
+&lt;p&gt;メールと同じですね。&lt;/p&gt;
+&lt;div class="highlight plaintext"&gt;&lt;table style="border-spacing: 0"&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class="gutter gl" style="text-align: right"&gt;&lt;pre class="lineno"&gt;1
+2
+3&lt;/pre&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;pre&gt;&amp;gt; いつもお世話になっております、大滝です。
+&amp;gt;
+&amp;gt; Faxでいただいた歌詞の件ですが。
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;いつもお世話になっております、大滝です。&lt;/p&gt;
+
+&lt;p&gt;Faxでいただいた歌詞の件ですが。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3&gt;二重引用&lt;/h3&gt;
+&lt;div class="highlight plaintext"&gt;&lt;table style="border-spacing: 0"&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class="gutter gl" style="text-align: right"&gt;&lt;pre class="lineno"&gt;1
+2
+3
+4
+5
+6&lt;/pre&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;pre&gt;&amp;gt; お世話になります。松本です。
+&amp;gt; え、また書き直しなの？
+&amp;gt;
+&amp;gt;&amp;gt; いつもお世話になっております、大滝です。
+&amp;gt;&amp;gt;
+&amp;gt;&amp;gt; Faxでいただいた歌詞の件ですが。
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;お世話になります。松本です。
+え、また書き直しなの？&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;いつもお世話になっております、大滝です。&lt;/p&gt;
+
+&lt;p&gt;Faxでいただいた歌詞の件ですが。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+</content>
+  </entry>
+  <entry>
+    <title>インストールについて</title>
+    <link rel="alternate" href="http://directions4.github.io/2015/02/14/install.html"/>
+    <id>http://directions4.github.io/2015/02/14/install.html</id>
+    <published>2015-02-14T00:00:00+09:00</published>
+    <updated>2015-02-15T02:48:52+09:00</updated>
+    <author>
+      <name>ほしいも小僧</name>
+    </author>
+    <content type="html">&lt;p&gt;インストールはとてもカンタンです。まずは、あなたのマシンでRubyやGemが動くことを確認してください。&lt;/p&gt;
+
+&lt;p&gt;Bundlerがインストールされていなければ、このようにインストールしてください。&lt;/p&gt;
+&lt;div class="highlight plaintext"&gt;&lt;table style="border-spacing: 0"&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class="gutter gl" style="text-align: right"&gt;&lt;pre class="lineno"&gt;1&lt;/pre&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;pre&gt;sudo gem install bundler
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;p&gt;適当なディレクトリで、本プロジェクトをリポジトリからコピーします。&lt;/p&gt;
+&lt;div class="highlight plaintext"&gt;&lt;table style="border-spacing: 0"&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class="gutter gl" style="text-align: right"&gt;&lt;pre class="lineno"&gt;1
+2&lt;/pre&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;pre&gt;git clone git@github.com:directions4/middleman-techblog-ja.git your-blog-name
+cd your-blog-name
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;p&gt;bundlerで、必要なライブラリ等をインストールします。&lt;/p&gt;
+&lt;div class="highlight plaintext"&gt;&lt;table style="border-spacing: 0"&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class="gutter gl" style="text-align: right"&gt;&lt;pre class="lineno"&gt;1&lt;/pre&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;pre&gt;bundle install --path=vendor/bundle
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;p&gt;サーバーを起動します。&lt;/p&gt;
+&lt;div class="highlight plaintext"&gt;&lt;table style="border-spacing: 0"&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class="gutter gl" style="text-align: right"&gt;&lt;pre class="lineno"&gt;1&lt;/pre&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;pre&gt;bundle exec middleman
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;p&gt;これで&lt;a href="http://localhost:4567"&gt;http://localhost:4567&lt;/a&gt; にアクセスするとサンプルのページが見られるはずです。&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>デザインのカスタマイズ</title>
+    <link rel="alternate" href="http://directions4.github.io/2015/02/14/design.html"/>
+    <id>http://directions4.github.io/2015/02/14/design.html</id>
+    <published>2015-02-14T00:00:00+09:00</published>
+    <updated>2015-02-15T02:48:52+09:00</updated>
+    <author>
+      <name>ほしいも小僧</name>
+    </author>
+    <content type="html">&lt;p&gt;Middleman-Blog-jaのスタイルシートは、Bourbon / Neat を利用しています。デザインのカスタマイズを行うには、&lt;code&gt;source/assets/css&lt;/code&gt;
+以下のscssファイル群を編集してください。&lt;/p&gt;
+
+&lt;p&gt;ファイルツリーはこのようになっています。&lt;/p&gt;
+&lt;div class="highlight plaintext"&gt;&lt;table style="border-spacing: 0"&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class="gutter gl" style="text-align: right"&gt;&lt;pre class="lineno"&gt;1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28&lt;/pre&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;pre&gt;├── _normalize.scss
+├── _variables.scss
+├── all.css.scss
+├── base
+│   ├── _base.scss
+│   ├── _buttons.scss
+│   ├── _forms.scss
+│   ├── _grid-settings.scss
+│   ├── _lists.scss
+│   ├── _tables.scss
+│   ├── _typography.scss
+│   ├── _variables.scss
+│   └── extends
+│       ├── _button.scss
+│       ├── _clearfix.scss
+│       ├── _errors.scss
+│       ├── _flashes.scss
+│       └── _hide-text.scss
+└── partials
+    ├── _article.scss
+    ├── _footer.scss
+    ├── _grids.scss
+    ├── _header.scss
+    ├── _highlight.scss
+    ├── _index.scss
+    ├── _meta.scss
+    └── _sidebar.scss
+
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;p&gt;読み込むscssファイルは、&lt;code&gt;all.css.scss&lt;/code&gt; で設定してください。&lt;/p&gt;
+
+&lt;p&gt;サイトの色、文字の大きさなどは、&lt;code&gt;_variables.scss&lt;/code&gt; で設定可能です。&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;base/&lt;/code&gt; 以下は、&lt;a href="http://bitters.bourbon.io/"&gt;Bitters&lt;/a&gt;です。特に編集する必要はないでしょう。&lt;/p&gt;
+
+&lt;h2&gt;HTMLテンプレートのカスタマイズ&lt;/h2&gt;
+
+&lt;p&gt;テンプレートエンジンに &lt;a href="http://slim-lang.com/"&gt;Slim&lt;/a&gt; を採用しています。&lt;/p&gt;
+
+&lt;p&gt;テンプレートは、&lt;code&gt;source/layouts&lt;/code&gt; 以下です。また、インデックス・ページに関しては、&lt;code&gt;source/index.html.slim&lt;/code&gt;, &lt;code&gt;source/calendar.html.slim&lt;/code&gt;, &lt;code&gt;source/tag.html.slim&lt;/code&gt;を編集してください。&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>デプロイについて</title>
+    <link rel="alternate" href="http://directions4.github.io/2015/02/14/deploy.html"/>
+    <id>http://directions4.github.io/2015/02/14/deploy.html</id>
+    <published>2015-02-14T00:00:00+09:00</published>
+    <updated>2015-02-15T02:48:52+09:00</updated>
+    <author>
+      <name>ほしいも小僧</name>
+    </author>
+    <content type="html">&lt;p&gt;Middleman は静的サイトジェネレーターです。外部にコンテンツを公開するには、Webサーバーが動いているシステムにデプロイする必要があります。&lt;/p&gt;
+
+&lt;p&gt;Github Page の他、git, rsync, ftp, sftp によるデプロイをサポートしています。&lt;/p&gt;
+
+&lt;p&gt;デフォルトでは sftpで、設定されたサーバーにデプロイします。&lt;code&gt;data/app.yml&lt;/code&gt; に、サーバーの情報を設定してください。&lt;/p&gt;
+&lt;div class="highlight yaml"&gt;&lt;table style="border-spacing: 0"&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class="gutter gl" style="text-align: right"&gt;&lt;pre class="lineno"&gt;1
+2
+3
+4&lt;/pre&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;pre&gt;&lt;span class="s"&gt;deploy_host&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt; &lt;span class="s"&gt;example.com&lt;/span&gt; &lt;span class="c1"&gt;# ホスト名&lt;/span&gt;
+&lt;span class="s"&gt;deploy_port&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt; &lt;span class="s"&gt;22&lt;/span&gt; &lt;span class="c1"&gt;# ポート番号&lt;/span&gt;
+&lt;span class="s"&gt;deploy_path&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt; &lt;span class="s"&gt;/home/foobar/public_html&lt;/span&gt; &lt;span class="c1"&gt;# パス&lt;/span&gt;
+&lt;span class="s"&gt;deploy_user&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt; &lt;span class="s"&gt;your_name&lt;/span&gt; &lt;span class="c1"&gt;# ユーザー名&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;p&gt;デプロイするには、まずは以下のようにbuildコマンドでコンテンツをコンパイルします。&lt;/p&gt;
+&lt;div class="highlight plaintext"&gt;&lt;table style="border-spacing: 0"&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class="gutter gl" style="text-align: right"&gt;&lt;pre class="lineno"&gt;1&lt;/pre&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;pre&gt;bundle exec middleman build
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;p&gt;コンパイルできたらデプロイします。デフォルトではSFTPを使います。&lt;/p&gt;
+&lt;div class="highlight ruby"&gt;&lt;table style="border-spacing: 0"&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class="gutter gl" style="text-align: right"&gt;&lt;pre class="lineno"&gt;1&lt;/pre&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;pre&gt;&lt;span class="n"&gt;bundle&lt;/span&gt; &lt;span class="nb"&gt;exec&lt;/span&gt; &lt;span class="n"&gt;middleman&lt;/span&gt; &lt;span class="n"&gt;deploy&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;h3&gt;sftp以外でのデプロイ&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href="https://github.com/karlfreeman/middleman-deploy"&gt;middleman-deploy&lt;/a&gt; を参照してください。&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>コンテンツの入力</title>
+    <link rel="alternate" href="http://directions4.github.io/2015/02/14/content.html"/>
+    <id>http://directions4.github.io/2015/02/14/content.html</id>
+    <published>2015-02-14T00:00:00+09:00</published>
+    <updated>2015-02-15T02:48:52+09:00</updated>
+    <author>
+      <name>ほしいも小僧</name>
+    </author>
+    <content type="html">&lt;p&gt;記事は、&lt;code&gt;source/posts&lt;/code&gt; 以下に、次のようなファイル名で保存してください。&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;[year]-[month]-[day]-[title].html.md&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;上記のファイルネームをつけると、Middleman は自動的に、&lt;code&gt;/[year]/[month]/[day]/[title].html&lt;/code&gt; という URI でコンパイルします。&lt;/p&gt;
+
+&lt;h3&gt;記事ファイルの内容&lt;/h3&gt;
+
+&lt;p&gt;記事は、基本的には &lt;a href="https://middlemanapp.com/jp/basics/frontmatter/"&gt;Frontmatter&lt;/a&gt; + Markdown で記述します。&lt;/p&gt;
+
+&lt;p&gt;具体的には、以下のような内容になります。&lt;/p&gt;
+&lt;div class="highlight plaintext"&gt;&lt;table style="border-spacing: 0"&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class="gutter gl" style="text-align: right"&gt;&lt;pre class="lineno"&gt;1
+2
+3
+4
+5
+6
+7
+8
+9&lt;/pre&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;pre&gt;---
+title: デプロイについて
+date: 2014-01-10
+tags: middleman, deploy
+---
+Middleman は静的サイトジェネレーターです。外部にコンテンツを公開するには、Webサーバーが動いているシステムにデプロイする必要があります。
+
+Middleman-TechBlog-ja は、Github Page の他、git, rsync, ftp, sftp によるデプロイをサポートしています。
+
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;p&gt;上下&lt;code&gt;---&lt;/code&gt; で区切られた部分が、Frontmatter です。この部分に記事のタイトルや日付、タグなどのメタ情報を記述します。&lt;/p&gt;
+
+&lt;p&gt;記事内容は、Markdown で記述します。Middleman-TechBlog-ja は、Redcarpet を採用しています。&lt;/p&gt;
+
+&lt;p&gt;ショートカットとして, &lt;code&gt;middleman article TITLE&lt;/code&gt; を実行できます。 Middleman は新しい記事を正しいファイル名で正しい場所に作ります。このコマンドには &lt;code&gt;--date&lt;/code&gt;, &lt;code&gt;--lang&lt;/code&gt; や &lt;code&gt;--blog&lt;/code&gt; オプションを渡すことができます。&lt;/p&gt;
+</content>
+  </entry>
+</feed>
