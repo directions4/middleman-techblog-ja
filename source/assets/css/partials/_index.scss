@@ -201,7 +201,7 @@
   }
 }
 .browser:before {
-  background:#DEDEDE url('/images/icons/window-button.png') no-repeat 0.5em 0.5em;
+  background:#DEDEDE image-path('icons/window-button.png') no-repeat 0.5em 0.5em;
   border-radius:3px 3px 0 0;
   content:"";
   display:block;
